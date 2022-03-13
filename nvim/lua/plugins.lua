@@ -28,14 +28,23 @@ end
   local use = require('packer').use
   require('packer').startup(function ()
     use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
-    use 'folke/tokyonight.nvim'
+    use {'morhetz/gruvbox'}
     use 'nvim-lua/plenary.nvim'
-    use {'nvim-lualine/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
-    use 'kyazdani42/nvim-tree.lua'
-    use 'kyazdani42/nvim-web-devicons'
+
+    use {
+     'kyazdani42/nvim-tree.lua',
+      requires = {'kyazdani42/nvim-web-devicons',},
+      config = function() require'nvim-tree'.setup {} end
+    }
     use 'nvim-treesitter/nvim-treesitter'
+    use 'neovim/nvim-lspconfig'
+    use "jose-elias-alvarez/null-ls.nvim"
+    use "jose-elias-alvarez/nvim-lsp-ts-utils"
+    use 'hrsh7th/nvim-compe'
   end)
 
 require("plugins/lualine")
