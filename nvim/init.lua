@@ -1,6 +1,6 @@
 require("preferences")
 require("plugins")
 require("keymaps")
+require("lsp-config")
 
-vim.g.tokyonight_style = "storm"
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme gruvbox]]
