@@ -1,6 +1,6 @@
 local opt = vim.opt
 
-opt.completeopt = "menuone,noinsert,noselect"
+opt.completeopt = "menu,menuone,noselect"
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.softtabstop = 2
@@ -14,4 +14,4 @@ opt.smartindent = true
 opt.splitbelow = true
 opt.splitright = true
 opt.termguicolors = true
-opt.wildmode = {'list', 'longest'}
+--opt.wildmode = {'list', 'longest'}
