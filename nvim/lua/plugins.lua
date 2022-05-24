@@ -30,6 +30,7 @@ end
     use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
     use {'morhetz/gruvbox'}
     use 'nvim-lua/plenary.nvim'
+    use 'lewis6991/gitsigns.nvim'
     use {
       'nvim-lualine/lualine.nvim',
       requires = {'kyazdani42/nvim-web-devicons', opt = true}
