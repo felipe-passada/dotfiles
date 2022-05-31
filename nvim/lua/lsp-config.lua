@@ -1,3 +1,6 @@
+-- TODO: [] refactor lsp-config into smaller files
+-- TODO: [] Add config to attach many lsp servers
+-- TODO: [] make sure tsserver config still works after refactor
 local lspconfig = require("lspconfig")
 local null_ls = require("null-ls")
 local buf_map = function(bufnr, mode, lhs, rhs, opts)

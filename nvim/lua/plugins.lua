@@ -54,6 +54,7 @@ end
 
     -- LSP
     use 'nvim-treesitter/nvim-treesitter'
+    use 'williamboman/nvim-lsp-installer'
     use 'neovim/nvim-lspconfig'
     use "jose-elias-alvarez/null-ls.nvim"
     use "jose-elias-alvarez/nvim-lsp-ts-utils"
