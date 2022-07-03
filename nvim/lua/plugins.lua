@@ -37,12 +37,12 @@ require('packer').startup(function()
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-    use {
-     'kyazdani42/nvim-tree.lua',
-      requires = {'kyazdani42/nvim-web-devicons',},
-      config = function() require'nvim-tree'.setup {} end
-    }
-    -- Completion plugins
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = { 'kyazdani42/nvim-web-devicons', },
+  }
+  use { 'akinsho/bufferline.nvim', tag = 'v2.*', requires = 'kyazdani42/nvim-web-devicons' }
+  -- Completion plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
