@@ -6,5 +6,6 @@ require("cmp-config")
 require("gitsigns-config")
 require("nvimtree-config")
 require("bufferline-config")
+require("autopairs")
 require("lsp")
 vim.cmd[[colorscheme gruvbox]]

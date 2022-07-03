@@ -32,6 +32,7 @@ require('packer').startup(function()
   use 'arcticicestudio/nord-vim'
   use 'nvim-lua/plenary.nvim'
   use 'lewis6991/gitsigns.nvim'
+  use 'windwp/nvim-autopairs' 
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
