@@ -33,6 +33,8 @@ require('packer').startup(function()
   use 'nvim-lua/plenary.nvim'
   use 'lewis6991/gitsigns.nvim'
   use 'windwp/nvim-autopairs' 
+  use 'numToStr/Comment.nvim'
+  use 'JoospeAlviste/nvim-ts-context-commentstring'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
