@@ -74,7 +74,7 @@ nvim_tree.setup {
   },
   filters = {
     dotfiles = false,
-    custom = {},
+    custom = {'^[.env, .env.example, .dockerignore, .gitignore]$'},
   },
   git = {
     enable = true,
