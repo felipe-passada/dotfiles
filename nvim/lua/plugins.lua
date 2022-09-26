@@ -29,6 +29,7 @@ local use = require('packer').use
 require('packer').startup(function()
   use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } }
   use { 'morhetz/gruvbox' }
+  use 'folke/tokyonight.nvim' 
   use 'arcticicestudio/nord-vim'
   use 'nvim-lua/plenary.nvim'
   use 'lewis6991/gitsigns.nvim'

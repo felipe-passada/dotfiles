@@ -8,5 +8,4 @@ require("nvimtree-config")
 require("bufferline-config")
 require("autopairs")
 require("lsp")
-vim.cmd[[colorscheme gruvbox]]
 require("comment-config")
