@@ -32,7 +32,8 @@ map('n', '<leader>ff', [[<cmd>lua require('telescope.builtin').find_files()<cr>]
 map('n', '<leader>fg', [[<cmd>lua require('telescope.builtin').live_grep()<cr>]], { silent = true })
 map('n', '<leader>fb', [[<cmd>lua require('telescope.builtin').buffers()<cr>]], { silent = true })
 map('n', '<leader>fh', [[<cmd>lua require('telescope.builtin').help_tags()<cr>]], { silent = true })
-map('n', '<leader>ft', [[<cmd>lua require('telescope.builtin').keymaps()<cr>]], { silent = true })
+map('n', '<leader>fk', [[<cmd>lua require('telescope.builtin').keymaps()<cr>]], { silent = true })
+map('n', '<leader>fr', [[<cmd>lua require('telescope.builtin').registers()<cr>]], { silent = true })
 
 -- NvimTree
 map('n', '<leader>t',':NvimTreeToggle<cr>', { silent = true })
