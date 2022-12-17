@@ -23,6 +23,7 @@ export ARCHFLAGS="-arch x86_64"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+[[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 alias ls="exa"
 alias ll="exa -l --icons"
 alias la="exa -la --icons"
