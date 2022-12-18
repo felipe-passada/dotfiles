@@ -17,7 +17,7 @@ case $_distro in
     *raspbian*)              ICON="";;
     *ubuntu*)                ICON="";;
     *elementary*)            ICON="";;
-    *fedora*)                ICON="";;
+    *fedora*)                ICON="";;
     *coreos*)                ICON="";;
     *gentoo*)                ICON="";;
     *mageia*)                ICON="";;
