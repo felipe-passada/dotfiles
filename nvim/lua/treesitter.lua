@@ -10,6 +10,11 @@ configs.setup {
   autopairs = {
     enable = true,
   },
+  rainbow = {
+    enable = true,
+    extend_mode = true,
+    max_file_lines = 5000
+  },
   highlight = {
     enable = true, -- false will disable the whole extension
     disable = { "" }, -- list of language that will be disabled
