@@ -28,7 +28,7 @@ map('v', '<A-j>', ':m .+1<CR>==', opts)
 map('v', '<A-k>', ':m .-2<CR>==', opts)
 
 -- Telescope
-map('n', '<leader>ff', [[<cmd>lua require('telescope.builtin').find_files()<cr>]], { silent=true })
+map('n', '<leader>ff', [[<cmd>lua require('telescope.builtin').find_files()<cr>]], { silent=true , desc = '[F]ind [F]iles'})
 map('n', '<leader>fg', [[<cmd>lua require('telescope.builtin').live_grep()<cr>]], { silent = true })
 map('n', '<leader>fb', [[<cmd>lua require('telescope.builtin').buffers()<cr>]], { silent = true })
 map('n', '<leader>fh', [[<cmd>lua require('telescope.builtin').help_tags()<cr>]], { silent = true })
