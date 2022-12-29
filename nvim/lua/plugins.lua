@@ -29,23 +29,28 @@ local use = require('packer').use
 require('packer').startup(function()
   use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } }
   use { 'morhetz/gruvbox' }
-  use 'folke/tokyonight.nvim' 
+  use 'folke/tokyonight.nvim'
   use 'arcticicestudio/nord-vim'
   use 'nvim-lua/plenary.nvim'
   use 'lewis6991/gitsigns.nvim'
-  use 'windwp/nvim-autopairs' 
+  use 'windwp/nvim-autopairs'
   use 'numToStr/Comment.nvim'
-  use 'JoospeAlviste/nvim-ts-context-commentstring'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use 'p00f/nvim-ts-rainbow'
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  use "lukas-reineke/indent-blankline.nvim"
 
   use {
-    'kyazdani42/nvim-tree.lua',
-    requires = { 'kyazdani42/nvim-web-devicons', },
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+    },
+    tag = 'nightly'
   }
-  use { 'akinsho/bufferline.nvim', tag = 'v2.*', requires = 'kyazdani42/nvim-web-devicons' }
+  use { 'akinsho/bufferline.nvim', tag = 'v2.*', requires = 'nvim-tree/nvim-web-devicons' }
   -- Completion plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -60,7 +65,11 @@ require('packer').startup(function()
   -- LSP
   use 'nvim-treesitter/nvim-treesitter'
   use 'williamboman/nvim-lsp-installer'
-  use 'neovim/nvim-lspconfig'
+  use {
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    'neovim/nvim-lspconfig'
+  }
   use "jose-elias-alvarez/null-ls.nvim"
   use "jose-elias-alvarez/nvim-lsp-ts-utils"
 end)
