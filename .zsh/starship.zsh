@@ -1,8 +1,8 @@
 # !/bin/zsh
 # find out which distribution we are running on
-LFILE="/etc/*-release"
+LFILE=$(cat /etc/*-release)
 MFILE="/System/Library/CoreServices/SystemVersion.plist"
-if [[ -f $LFILE ]]; then
+if [[ $LFILE ]]; then
   _distro=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
 elif [[ -f $MFILE ]]; then
   _distro="macos"
@@ -17,7 +17,7 @@ case $_distro in
     *raspbian*)              ICON="";;
     *ubuntu*)                ICON="";;
     *elementary*)            ICON="";;
-    *fedora*)                ICON="";;
+    *fedora*)                ICON="";;
     *coreos*)                ICON="";;
     *gentoo*)                ICON="";;
     *mageia*)                ICON="";;
