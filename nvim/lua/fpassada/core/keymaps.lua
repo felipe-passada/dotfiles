@@ -27,16 +27,3 @@ map('n', '<S-h>', ':bprevious<CR>', opts)
 map('v', '<A-j>', ':m .+1<CR>==', opts)
 map('v', '<A-k>', ':m .-2<CR>==', opts)
 
--- Telescope
-map('n', '<leader>ff', [[<cmd>lua require('telescope.builtin').find_files()<cr>]], { silent=true , desc = '[F]ind [F]iles'})
-map('n', '<leader>fg', [[<cmd>lua require('telescope.builtin').live_grep()<cr>]], { silent = true })
-map('n', '<leader>fb', [[<cmd>lua require('telescope.builtin').buffers()<cr>]], { silent = true })
-map('n', '<leader>fh', [[<cmd>lua require('telescope.builtin').help_tags()<cr>]], { silent = true })
-map('n', '<leader>fk', [[<cmd>lua require('telescope.builtin').keymaps()<cr>]], { silent = true })
-map('n', '<leader>fr', [[<cmd>lua require('telescope.builtin').registers()<cr>]], { silent = true })
-
--- NvimTree
-map('n', '<leader>t',':NvimTreeToggle<cr>', { silent = true })
-map('n', '<leader>r',':NvimTreeRefresh<cr>', { silent = true })
-map('n', '<leader>f',':NvimTreeFindFile<cr>', { silent = true })
-
