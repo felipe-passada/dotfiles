@@ -1,28 +1,45 @@
-local status_ok, configs = pcall(require, "nvim-treesitter.configs")
-if not status_ok then
-  return
-end
+return { 
+  "nvim-treesitter/nvim-treesitter", 
+  build = ":TSUpdate",
+  dependencies = {
+    "windwp/nvim-ts-autotag"
+  },
 
-configs.setup {
-  ensure_installed = {"lua", "typescript", "javascript", "python", "css", "scss", "html"}, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
-  ignore_install = { "" }, -- List of parsers to ignore installing
-  autopairs = {
-    enable = true,
-  },
-  rainbow = {
-    enable = true,
-    extend_mode = true,
-    max_file_lines = 5000
-  },
-  highlight = {
-    enable = true, -- false will disable the whole extension
-    disable = { "" }, -- list of language that will be disabled
-    additional_vim_regex_highlighting = true,
-  },
-  indent = { enable = true, disable = { "yaml" } },
-  context_commentstring = {
-    enable = true,
-    enable_autocmd = false,
-  },
+  config  = function()
+    local status_ok, configs = pcall(require, "nvim-treesitter.configs")
+    if not status_ok then
+      return
+    end
+
+    configs.setup {
+      ensure_installed = {
+        "lua",
+        "typescript",
+        "javascript",
+        "python",
+        "css",
+        "scss",
+        "html"
+      },
+      sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
+      ignore_install = { "" }, -- List of parsers to ignore installing
+      autopairs = { enable = true },
+      autotage = { enable = true },
+      -- rainbow = {
+      --   enable = true,
+      --   extend_mode = true,
+      --   max_file_lines = 5000
+      -- },
+      highlight = {
+        enable = true, -- false will disable the whole extension
+        disable = { "" }, -- list of language that will be disabled
+        additional_vim_regex_highlighting = true,
+      },
+      indent = { enable = true },
+      context_commentstring = {
+        enable = true,
+        enable_autocmd = false,
+      },
+    }
+  end
 }
