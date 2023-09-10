@@ -14,10 +14,21 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazy_status, lazy = pcall(require, "lazy")
 
-if not lazy_status 
+if not lazy_status
   then
     print("error while requiring lazy")
     return;
 end
-
-lazy.setup("fpassada.plugins", {})
+vim.g.mapleader = " "
+lazy.setup({{import = "fpassada.plugins"}, {import  = "fpassada.plugins.lsp"}}, {
+  install = {
+    colorscheme = { "catppuccin" },
+  },
+  checker = {
+    enabled = true,
+    notify = false
+  },
+  change_detection = {
+    notify = false
+  }
+})
