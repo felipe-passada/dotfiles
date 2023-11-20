@@ -20,8 +20,9 @@ map('n', '<C-S-left>', ':vertical resize -3<CR>', opts)
 map('n', '<C-S-right>', ':vertical resize +3<CR>', opts)
 
 -- Navigating buffers
-map('n', '<S-l>', ':bnext<CR>', opts)
-map('n', '<S-h>', ':bprevious<CR>', opts)
+map('n', '<Tab>', ':bnext<CR>', opts)
+map('n', '<S-Tab>', ':bprevious<CR>', opts)
+map('n', '<C-x>', ':bw<CR>', opts)
 
 -- Moving text
 map('v', '<A-j>', ':m .+1<CR>==', opts)
