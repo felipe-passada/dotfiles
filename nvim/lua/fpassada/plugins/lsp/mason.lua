@@ -22,9 +22,12 @@ return {
         "tsserver",
         "html",
         "cssls",
+        "tailwindcss",
         "lua_ls",
         "emmet_ls",
-        "pyright"
+        "pyright",
+        "kotlin_language_server",
+        "angularls"
       },
 
       automatic_installation = true

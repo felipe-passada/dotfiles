@@ -1,5 +1,5 @@
-return { 
-  "nvim-treesitter/nvim-treesitter", 
+return {
+  "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   dependencies = {
     "windwp/nvim-ts-autotag"
@@ -19,7 +19,8 @@ return {
         "python",
         "css",
         "scss",
-        "html"
+        "html",
+        "kotlin"
       },
       sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
       ignore_install = { "" }, -- List of parsers to ignore installing
