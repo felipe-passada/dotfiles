@@ -26,10 +26,10 @@ export EDITOR=nvim
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
-alias ls="exa"
-alias ll="exa -l --icons"
-alias la="exa -la --icons"
-alias lt="exa --tree --level=2 --icons"
+alias ls="eza"
+alias ll="eza -l --icons"
+alias la="eza -la --icons"
+alias lt="eza --tree --level=2 --icons"
 alias ssh="kitty +kitten ssh"
 eval "$(starship init zsh)"
 
