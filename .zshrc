@@ -49,3 +49,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 source <(ng completion script)
 export DVM_DIR="/home/fpassada/.dvm"
 export PATH="$DVM_DIR/bin:$PATH"
+
+[[ -s "/home/fpassada/.gvm/scripts/gvm" ]] && source "/home/fpassada/.gvm/scripts/gvm"
