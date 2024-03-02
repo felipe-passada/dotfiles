@@ -8,7 +8,7 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	dnf
-	zsh-z
+        zoxide
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -51,3 +51,4 @@ export DVM_DIR="/home/fpassada/.dvm"
 export PATH="$DVM_DIR/bin:$PATH"
 
 [[ -s "/home/fpassada/.gvm/scripts/gvm" ]] && source "/home/fpassada/.gvm/scripts/gvm"
+eval "$(zoxide init zsh)"
