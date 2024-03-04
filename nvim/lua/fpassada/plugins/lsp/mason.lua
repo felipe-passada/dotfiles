@@ -27,7 +27,8 @@ return {
         "emmet_ls",
         "pyright",
         "kotlin_language_server",
-        "angularls"
+        "angularls",
+        "gopls"
       },
 
       automatic_installation = true
