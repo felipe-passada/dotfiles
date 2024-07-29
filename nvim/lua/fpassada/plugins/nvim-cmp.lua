@@ -1,5 +1,5 @@
 return {
-  "hrs7th/nvim-cmp",
+  "hrsh7th/nvim-cmp",
   event = "InsertEnter", -- Lazy will only this plugin when using insert mode
   dependencies = {
     "hrsh7th/cmp-buffer", -- completion from buffers
